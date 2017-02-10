@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA4A1399C33E63C734B83E6 /* libPods-SCPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E45B95DA6FC1800C479B78 /* libPods-SCPhotoBrowser.a */; };
 		AE13B0E91E4DC75800F739DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13B0E81E4DC75800F739DE /* main.m */; };
 		AE13B0EC1E4DC75800F739DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13B0EB1E4DC75800F739DE /* AppDelegate.m */; };
 		AE13B0EF1E4DC75800F739DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13B0EE1E4DC75800F739DE /* ViewController.m */; };
 		AE13B0F21E4DC75800F739DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE13B0F01E4DC75800F739DE /* Main.storyboard */; };
 		AE13B0F41E4DC75800F739DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE13B0F31E4DC75800F739DE /* Assets.xcassets */; };
 		AE13B0F71E4DC75800F739DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE13B0F51E4DC75800F739DE /* LaunchScreen.storyboard */; };
+		AE13B1001E4DC78400F739DE /* SCPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE13B0FF1E4DC78400F739DE /* SCPhotoBrowserView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30EDB5871D717C516FAC5510 /* Pods-SCPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCPhotoBrowser/Pods-SCPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		34E45B95DA6FC1800C479B78 /* libPods-SCPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF4D675760F7681D352EF9A /* Pods-SCPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCPhotoBrowser/Pods-SCPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13B0E41E4DC75800F739DE /* SCPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE13B0E81E4DC75800F739DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE13B0EA1E4DC75800F739DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 		AE13B0F31E4DC75800F739DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE13B0F61E4DC75800F739DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE13B0F81E4DC75800F739DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE13B0FE1E4DC78400F739DE /* SCPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPhotoBrowserView.h; sourceTree = "<group>"; };
+		AE13B0FF1E4DC78400F739DE /* SCPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPhotoBrowserView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA4A1399C33E63C734B83E6 /* libPods-SCPhotoBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27364A0E8D716E1F560A9CBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FF4D675760F7681D352EF9A /* Pods-SCPhotoBrowser.debug.xcconfig */,
+				30EDB5871D717C516FAC5510 /* Pods-SCPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE13B0DB1E4DC75800F739DE = {
 			isa = PBXGroup;
 			children = (
 				AE13B0E61E4DC75800F739DE /* SCPhotoBrowser */,
 				AE13B0E51E4DC75800F739DE /* Products */,
+				27364A0E8D716E1F560A9CBC /* Pods */,
+				E50A6F5BEF949BC7127AFA27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,8 @@
 		AE13B0E61E4DC75800F739DE /* SCPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				AE13B0FE1E4DC78400F739DE /* SCPhotoBrowserView.h */,
+				AE13B0FF1E4DC78400F739DE /* SCPhotoBrowserView.m */,
 				AE13B0EA1E4DC75800F739DE /* AppDelegate.h */,
 				AE13B0EB1E4DC75800F739DE /* AppDelegate.m */,
 				AE13B0ED1E4DC75800F739DE /* ViewController.h */,
@@ -79,6 +100,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E50A6F5BEF949BC7127AFA27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34E45B95DA6FC1800C479B78 /* libPods-SCPhotoBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE13B0FB1E4DC75800F739DE /* Build configuration list for PBXNativeTarget "SCPhotoBrowser" */;
 			buildPhases = (
+				13A766E8FA9BB1118B9D75CD /* [CP] Check Pods Manifest.lock */,
 				AE13B0E01E4DC75800F739DE /* Sources */,
 				AE13B0E11E4DC75800F739DE /* Frameworks */,
 				AE13B0E21E4DC75800F739DE /* Resources */,
+				5C217149DE339BC34A4BF324 /* [CP] Embed Pods Frameworks */,
+				C242C7A651E4CCF0AF30F0E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +178,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13A766E8FA9BB1118B9D75CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C217149DE339BC34A4BF324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCPhotoBrowser/Pods-SCPhotoBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C242C7A651E4CCF0AF30F0E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCPhotoBrowser/Pods-SCPhotoBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE13B0E01E4DC75800F739DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +233,7 @@
 			files = (
 				AE13B0EF1E4DC75800F739DE /* ViewController.m in Sources */,
 				AE13B0EC1E4DC75800F739DE /* AppDelegate.m in Sources */,
+				AE13B1001E4DC78400F739DE /* SCPhotoBrowserView.m in Sources */,
 				AE13B0E91E4DC75800F739DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +350,7 @@
 		};
 		AE13B0FC1E4DC75800F739DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF4D675760F7681D352EF9A /* Pods-SCPhotoBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QBKCVGUR33;
@@ -281,6 +363,7 @@
 		};
 		AE13B0FD1E4DC75800F739DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30EDB5871D717C516FAC5510 /* Pods-SCPhotoBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QBKCVGUR33;
@@ -310,6 +393,7 @@
 				AE13B0FD1E4DC75800F739DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
