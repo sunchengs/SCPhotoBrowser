@@ -1,7 +1,7 @@
 # SCPhotoBrowser
 拆分YYKit中的图片浏览器,去掉了大部分依赖库，添加YYWebImage即可使用。
 
-#HH Usage
+# Usage
 引用头文件`#import "SCPhotoBrowserView.h"`
 ```
  self.items = [NSMutableArray new];
