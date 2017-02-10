@@ -15,5 +15,5 @@
     // 调用
     SCPhotoBrowserView *browerView = [[SCPhotoBrowserView alloc] initWithGroupItems:self.items];
     [browerView presentFromImageView:self.button toContainer:self.navigationController.view animated:YES completion:nil];
-    ```
+```
     
